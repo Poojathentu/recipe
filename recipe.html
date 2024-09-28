@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Biryani Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="recipe-card">
+        <h1>Chicken Biryani</h1>
+        <img src="https://tryloops3bucket.s3.me-south-1.amazonaws.com/productImages/37149/16938516661501910.jpg" alt="Chicken Biryani">
+        <div class="info">
+            <p><strong>Preparation Time:</strong> 45 mins</p>
+            <p><strong>Servings:</strong> 4</p>
+        </div>
+
+        <button id="toggle-ingredients">Show Ingredients</button>
+        <ul id="ingredients" class="hidden">
+            <li>500g chicken</li>
+            <li>2 cups basmati rice</li>
+            <li>4 onions, sliced</li>
+            <li>2 tomatoes, chopped</li>
+            <li>Spices (cardamom, cloves, cinnamon)</li>
+            <li>Yogurt, salt, oil</li>
+        </ul>
+
+        <button id="toggle-steps">Show Steps</button>
+        <ol id="steps" class="hidden">
+            <li>Marinate the chicken with spices and yogurt for 30 minutes.</li>
+            <li>Fry onions until golden brown, and set aside.</li>
+            <li>Cook the chicken until tender.</li>
+            <li>Boil rice with spices until 70% cooked.</li>
+            <li>Layer rice and chicken, add fried onions, and steam for 15 minutes.</li>
+        </ol>
+
+        <button id="start-cooking">Start Cooking</button>
+        <p id="current-step"></p>
+
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
